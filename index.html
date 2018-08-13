@@ -173,12 +173,15 @@
     <script src="js/plugins.js"></script>
     <script src="js/polygons.js"></script>
     <script src="js/main.js"></script>
-<audio id="audioplayer" src="http://air.radiorecord.ru:8102/trap_320" autoplay="true" type="audio/mpeg">
-</audio>
+<!--   <audio id="audioplayer" src="http://air.radiorecord.ru:8102/trap_320" autoplay="true" type="audio/mpeg"> 
+</audio> -->
 <script>
 <!--
-var audio = document.querySelector("audio");
+    
+var audio = new Audio("http://air.radiorecord.ru:8102/trap_320");
+    audio.setAttribute("src", "http://air.radiorecord.ru:8102/trap_320");
 audio.volume=0.05;
+    audio.play();
 -->
 </script>
 </body>
